@@ -10,17 +10,17 @@
 		</section>
 		
 		<section>
-			<form>
+			<form action="inserir.php" method="post">
 				<div>
-					<input type="text" placeholder="Nome" />
+					<input type="text" placeholder="Nome" name="txNome"/>
 				</div>
 				
 				<div>
-					<input type="text" placeholder="E-mail" />
+					<input type="text" placeholder="E-mail" name="txEmail"/>
 				</div>
 				
 				<div>
-					<input type="password" placeholder="Senha" />
+					<input type="password" placeholder="Senha" name="txSenha"/>
 				</div>
 				
 				<div>
