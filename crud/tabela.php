@@ -1,0 +1,34 @@
+<?php require("conexao.php"); ?>
+<html>
+	<head>
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+		<body>
+			<section>
+				<h1>Contatos Recebidos</h1>
+			</section>
+			
+			<section>
+				<table class="table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Nome</th>
+							<th scope="col">Email</th>
+							<th scope="col">Senha</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+							try{
+								
+							}catch(PDOException $e){
+								echo "Erro: ". $e->getMessage();
+							}
+						?>
+					</tbody>
+				</table>
+			</section>
+		</body>
+</html>
