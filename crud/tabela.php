@@ -22,7 +22,12 @@
 					<tbody>
 						<?php
 							try{
-								
+								$stmt = $conn->prepare('select * from tb1');
+								$stmt -> execute();
+								while($row = $stmt -> fetch(PDO :: FETCH_BOTH)){
+									echo "<tr>";
+										echo "<th scope='row'>$row[idUsuario]</th>";
+								}
 							}catch(PDOException $e){
 								echo "Erro: ". $e->getMessage();
 							}
