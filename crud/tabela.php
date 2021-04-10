@@ -27,6 +27,17 @@
 								while($row = $stmt -> fetch(PDO :: FETCH_BOTH)){
 									echo "<tr>";
 										echo "<th scope='row'>$row[idUsuario]</th>";
+										echo "<td>$row[nomeUsuario]</td>";
+										echo "<td>$row[emailUsuario]</td>";
+										echo "<td>$row[senhaUsuario]</td>";
+										echo "<td>";
+										
+										echo "<a href='./'excluir.php?id=$row[idUsuario]>";
+												echo "Excluir";
+										echo "</a>";
+										
+										echo "</td>";	
+									echo "</tr>";			
 								}
 							}catch(PDOException $e){
 								echo "Erro: ". $e->getMessage();
