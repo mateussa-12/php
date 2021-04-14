@@ -9,7 +9,7 @@
 		$stmt = $conn->prepare("insert into tb1 values(null,'$nome','$email','$senha');");
 		$stmt ->execute();
 		
-		header("location:cadastro.php")
+		header("location:index.php");
 		}
 		catch(PDOException $e){
 			echo "Erro: " . $e -> getMessage();

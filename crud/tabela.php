@@ -10,7 +10,7 @@
 			</section>
 			
 			<section>
-				<table class="table-striped">
+				<table class="table table-striped">
 					<thead>
 						<tr>
 							<th scope="col">#</th>
@@ -24,7 +24,7 @@
 							try{
 								$stmt = $conn->prepare('select * from tb1');
 								$stmt -> execute();
-								while($row = $stmt -> fetch(PDO :: FETCH_BOTH)){
+								while($row = $stmt ->fetch(PDO :: FETCH_BOTH)){
 									echo "<tr>";
 										echo "<th scope='row'>$row[idUsuario]</th>";
 										echo "<td>$row[nomeUsuario]</td>";
